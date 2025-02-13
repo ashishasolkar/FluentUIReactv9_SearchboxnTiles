@@ -39,7 +39,9 @@ export const Default = (props: cardProps) => {
     <Card className={styles.card}>
       <CardPreview>
         <img
-          src={resolveAsset('doc_template.png')}
+          // src={resolveAsset('doc_template.png')}
+          src={props.image}
+          style={{height:"270px"}}
           alt="Preview of a Word document: About Us - Overview"
         />
       </CardPreview>
